@@ -5,22 +5,30 @@ import { GraphQLSession } from 'src/types/session';
 import InfoText from '../NonSitecore/InfoText';
 import { faClock, faDoorOpen, faUser } from '@fortawesome/free-solid-svg-icons';
 import { useI18n } from 'next-localization';
+import { useEffect, useState } from 'react';
 
+function getRandomDateInNextTwoWeeks(): string {
+  const today = new Date();
+  const endDate = new Date();
+  endDate.setDate(today.getDate() + 14);
+
+  const randomTime = today.getTime() + Math.random() * (endDate.getTime() - today.getTime());
+  const randomDate = new Date(randomTime);
+
+  const month = randomDate.getMonth() + 1; // getMonth() returns 0-11, so add 1
+  const day = randomDate.getDate();
+
+  const formattedDate = `${month.toString().padStart(2, '0')}-${day.toString().padStart(2, '0')}`;
+  return formattedDate;
+}
 const SessionListItem = (props: GraphQLSession): JSX.Element => {
-  const premiumCssClass = props.premium?.value ? 'premium' : '';
   const { t } = useI18n();
 
-  const ticketTypeBadge = props.premium?.value && (
-    <span className="session-info-ticket">{t('premium') || 'premium'}</span>
-  );
+  const [randomDate, setRandomDate] = useState<string>('');
 
-  const day =
-    props.day?.targetItems &&
-    typeof props.day.targetItems === 'object' &&
-    props.day.targetItems.length > 0 &&
-    props.day.targetItems[0].name?.value
-      ? props.day.targetItems[0].name.value[props.day.targetItems[0].name.value.length - 1]
-      : '?';
+  useEffect(() => {
+    setRandomDate(getRandomDateInNextTwoWeeks());
+  }, []);
 
   const time = props.timeslots?.targetItems &&
     typeof props.timeslots.targetItems === 'object' &&
@@ -54,20 +62,19 @@ const SessionListItem = (props: GraphQLSession): JSX.Element => {
   );
 
   return (
-    <div className={`information-block ${premiumCssClass}`}>
+    <div className={`information-block `}>
       <div className="info-col-left">
-        {ticketTypeBadge}
         <div className="session-info-month">day</div>
-        <div className="session-info-date">{day}</div>
+        <div className="session-info-date">{randomDate}</div>
       </div>
       <div className="info-col-content">
-        <Text field={props.name} tag="div" className="info-col-title" />
+        <div className="info-col-title">Available slot</div>
         {speakers}
         {time}
         {room}
         <div className="info-col-cta">
           <Link href={props.url.path} className="btn-main">
-            {t('More Information') || 'More Information'}
+            {t('Book now') || 'Book now'}
           </Link>
         </div>
       </div>

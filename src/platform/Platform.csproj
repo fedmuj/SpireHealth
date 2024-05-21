@@ -48,6 +48,9 @@
       <HintPath>lib\Spe.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Siteimprove">
+      <HintPath>lib\Siteimprove.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -87,6 +90,11 @@
     <Content Include="App_Config\Include\Sitecore.Demo.CustomFields.config" />
     <Content Include="App_Config\Include\Sitecore.Demo.SerializeDepth.config" />
     <Content Include="xdts\Web.config.xdt" />
+    <Content Include="App_Config\Include\Siteimprove.config" />
+    <Content Include="App_Data\xdts\Web.config.xdt" />	
+	<Content Include="sitecore modules\Shell\Siteimprove\Assets\Siteimprove.js" />
+    <Content Include="sitecore modules\Shell\Siteimprove\Assets\SiteimproveEECommand.js" />
+    <Content Include="sitecore\shell\Themes\Standard\Siteimprove.zip" />
     <None Include="Platform.wpp.targets" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="README.md" />

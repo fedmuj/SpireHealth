@@ -66,7 +66,7 @@ const SummitLayout = (props: PropsWithChildren): JSX.Element => {
           footerLogo: {
             jsonValue: {
               value: {
-                src: 'https://playsummit.sitecoresandbox.cloud/api/public/content/c78f4095acc746a98146aaa38f57a04f?v=85bba949&t=web',
+                src: 'https://edge.sitecorecloud.io/sitecoresaa8389-fmcplaysumm9e8c-production3921-b4c4/media/logo2x.png?h=81&iar=0&w=520',
                 width: '413',
                 height: '113',
               },
@@ -140,7 +140,7 @@ const SummitLayout = (props: PropsWithChildren): JSX.Element => {
                 children: {
                   results: [
                     {
-                      displayName: 'Sessions',
+                      displayName: 'Location',
                       icon: { value: '' },
                       title: { value: '' },
                       field: {
@@ -161,7 +161,7 @@ const SummitLayout = (props: PropsWithChildren): JSX.Element => {
                       },
                     },
                     {
-                      displayName: 'Speakers',
+                      displayName: 'Our Consultants',
                       icon: { value: '' },
                       title: { value: '' },
                       field: {
@@ -182,7 +182,7 @@ const SummitLayout = (props: PropsWithChildren): JSX.Element => {
                       },
                     },
                     {
-                      displayName: 'Vendors',
+                      displayName: 'Treatments',
                       icon: { value: '' },
                       title: { value: '' },
                       field: {
@@ -203,7 +203,7 @@ const SummitLayout = (props: PropsWithChildren): JSX.Element => {
                       },
                     },
                     {
-                      displayName: 'Sponsors',
+                      displayName: 'Information',
                       icon: { value: '' },
                       title: { value: '' },
                       field: {
@@ -224,7 +224,7 @@ const SummitLayout = (props: PropsWithChildren): JSX.Element => {
                       },
                     },
                     {
-                      displayName: 'About Us',
+                      displayName: 'Book a GP',
                       icon: { value: '' },
                       title: { value: '' },
                       field: {
@@ -400,7 +400,7 @@ const SummitLayout = (props: PropsWithChildren): JSX.Element => {
                   'stylelabs-content-id': '30940',
                   thumbnailsrc:
                     'https://playsummit.sitecoresandbox.cloud/api/gateway/30940/thumbnail',
-                  src: 'https://playsummit.sitecoresandbox.cloud/api/public/content/83a458a1cb54401cab2308488bbd1031?v=bdb6447b&t=web',
+                  src: 'https://edge.sitecorecloud.io/sitecoresaa8389-fmcplaysumm9e8c-production3921-b4c4/media/logo2x.png?h=81&iar=0&w=520',
                   'stylelabs-content-type': 'Image',
                   alt: 'PLAY! Summit logo - stacked light grey',
                   height: '113',
@@ -415,7 +415,7 @@ const SummitLayout = (props: PropsWithChildren): JSX.Element => {
             children: {
               results: [
                 {
-                  displayName: 'Sessions',
+                  displayName: 'Locations',
                   field: {
                     jsonValue: {
                       value: {
@@ -434,7 +434,7 @@ const SummitLayout = (props: PropsWithChildren): JSX.Element => {
                   },
                 },
                 {
-                  displayName: 'Speakers',
+                  displayName: 'Our consultants',
                   field: {
                     jsonValue: {
                       value: {
@@ -453,7 +453,7 @@ const SummitLayout = (props: PropsWithChildren): JSX.Element => {
                   },
                 },
                 {
-                  displayName: 'Vendors',
+                  displayName: 'Treatments',
                   field: {
                     jsonValue: {
                       value: {
@@ -472,7 +472,7 @@ const SummitLayout = (props: PropsWithChildren): JSX.Element => {
                   },
                 },
                 {
-                  displayName: 'Sponsors',
+                  displayName: 'Information',
                   field: {
                     jsonValue: {
                       value: {
@@ -491,7 +491,7 @@ const SummitLayout = (props: PropsWithChildren): JSX.Element => {
                   },
                 },
                 {
-                  displayName: 'About Us',
+                  displayName: 'Book a GP',
                   field: {
                     jsonValue: {
                       value: {
@@ -529,7 +529,7 @@ const SummitLayout = (props: PropsWithChildren): JSX.Element => {
                 'stylelabs-content-id': '30940',
                 thumbnailsrc:
                   'https://playsummit.sitecoresandbox.cloud/api/gateway/30940/thumbnail',
-                src: 'https://playsummit.sitecoresandbox.cloud/api/public/content/83a458a1cb54401cab2308488bbd1031?v=bdb6447b&t=web',
+                src: 'https://edge.sitecorecloud.io/sitecoresaa8389-fmcplaysumm9e8c-production3921-b4c4/media/logo2x.png?h=81&iar=0&w=520',
                 'stylelabs-content-type': 'Image',
                 alt: 'PLAY! Summit logo - stacked light grey',
                 height: '113',
@@ -544,7 +544,7 @@ const SummitLayout = (props: PropsWithChildren): JSX.Element => {
           children: {
             results: [
               {
-                displayName: 'Sessions',
+                displayName: 'Locations',
                 field: {
                   jsonValue: {
                     value: {
@@ -563,7 +563,7 @@ const SummitLayout = (props: PropsWithChildren): JSX.Element => {
                 },
               },
               {
-                displayName: 'Speakers',
+                displayName: 'Our consultants',
                 field: {
                   jsonValue: {
                     value: {
@@ -582,7 +582,7 @@ const SummitLayout = (props: PropsWithChildren): JSX.Element => {
                 },
               },
               {
-                displayName: 'Vendors',
+                displayName: 'Treatments',
                 field: {
                   jsonValue: {
                     value: {
@@ -601,7 +601,7 @@ const SummitLayout = (props: PropsWithChildren): JSX.Element => {
                 },
               },
               {
-                displayName: 'Sponsors',
+                displayName: 'Information',
                 field: {
                   jsonValue: {
                     value: {
@@ -620,7 +620,7 @@ const SummitLayout = (props: PropsWithChildren): JSX.Element => {
                 },
               },
               {
-                displayName: 'About Us',
+                displayName: 'Book a GP',
                 field: {
                   jsonValue: {
                     value: {

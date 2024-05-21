@@ -51,20 +51,14 @@ const SpeakerInformationPageHero = (props: SpeakerInformationPageHeroProps): JSX
       <>
         {props.fields.JobTitle?.value || isPageEditing ? (
           <div>
-            <span className="label">{t('Job Title') || 'Job Title'}:</span>{' '}
+            <span className="label">{t('Specialises in') || 'Specialises in'}:</span>{' '}
             <Text field={props.fields.JobTitle} tag="span" />
           </div>
         ) : undefined}
         {props.fields.Company?.value || isPageEditing ? (
           <div>
-            <span className="label">{t('Company') || 'Company'}:</span>{' '}
+            <span className="label">{t('Also available for') || 'Also available for'}:</span>{' '}
             <Text field={props.fields.Company} tag="span" />
-          </div>
-        ) : undefined}
-        {props.fields.Location?.value || isPageEditing ? (
-          <div>
-            <span className="label">{t('Location') || 'Location'}:</span>{' '}
-            <Text field={props.fields.Location} tag="span" />
           </div>
         ) : undefined}
       </>

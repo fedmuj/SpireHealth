@@ -1,11 +1,6 @@
 import { Field, Image, ImageField, Text } from '@sitecore-jss/sitecore-jss-nextjs';
 import { ComponentProps } from 'lib/component-props';
-import {
-  faFacebookF,
-  faTwitter,
-  faLinkedinIn,
-  faInstagram,
-} from '@fortawesome/free-brands-svg-icons';
+import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import SocialIcon from './SocialIcon';
 
 export type InformationPageHeroProps = ComponentProps & {
@@ -42,20 +37,14 @@ const InformationPageHero = (props: InformationPageHeroProps): JSX.Element => {
         <div className="content-container">
           <div className={`container-content-text`}>
             <div>
-              <p className="title">
-                Meet the <span className="information-type">{lowerCaseQualificative}</span>{' '}
-                {props.type}:
-              </p>
+              <p className="title">Consultant Name:</p>
               <h1 className="name">
                 <Text field={props.fields.Name} />
               </h1>
             </div>
             {informations}
             <div className="external-website-icons">
-              <SocialIcon Icon={faFacebookF} Link={props.fields.FacebookProfileLink} />
-              <SocialIcon Icon={faTwitter} Link={props.fields.TwitterProfileLink} />
               <SocialIcon Icon={faLinkedinIn} Link={props.fields.LinkedinProfileLink} />
-              <SocialIcon Icon={faInstagram} Link={props.fields.InstagramProfileLink} />
             </div>
           </div>
         </div>

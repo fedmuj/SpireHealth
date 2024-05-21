@@ -3,11 +3,9 @@ import { getDynamicWelcomeMessage, WelcomeMessage } from 'src/services/BoxeverSe
 import { getIpAddress } from 'src/services/IpAddressService';
 import { useRouter } from 'next/router';
 import { ComponentProps } from 'lib/component-props';
-import { useI18n } from 'next-localization';
 
 const DynamicWelcomeMessage = (props: ComponentProps): JSX.Element => {
-  const { t } = useI18n();
-  const DEFAULT_MESSAGE = t('Welcome to PLAY! Summit') || 'Welcome to PLAY! Summit';
+  const DEFAULT_MESSAGE = '';
 
   const [message, SetMessage] = useState('');
   const router = useRouter();

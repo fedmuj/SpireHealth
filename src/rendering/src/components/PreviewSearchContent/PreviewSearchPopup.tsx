@@ -19,9 +19,9 @@ const PreviewSearchPopup = ({
 }: PreviewSearchPopupProps): JSX.Element => {
   const keyphraseSuggestion = { text: keyphrase.trim(), freq: 1 } as Suggestion;
   const fallbackSuggestions = [
-    { text: 'outdoor sports', freq: 1 },
-    { text: 'healthy living', freq: 1 },
-    { text: 'cycling', freq: 1 },
+    { text: 'Cosmetic surgery', freq: 1 },
+    { text: "Men's health", freq: 1 },
+    { text: "Women's health", freq: 1 },
   ];
 
   return (

@@ -31,7 +31,7 @@ export const fetchUserProfileData = async () => {
     id_type: idType,
   });
 
-  const url = `https://discover.sitecorecloud.io/portal/${
+  const url = `https://api-euc1.rfksrv.com/portal/${
     config.customerKey.split('-')[1]
   }/v4/data/user-profile?${params}`;
 

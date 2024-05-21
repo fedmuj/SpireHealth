@@ -19,7 +19,7 @@
       }
 
       .session-info-date {
-        @apply text-4xl font-bold leading-6 inline-block;
+        @apply text-2xl font-bold leading-6 inline-block;
       }
     }
 
