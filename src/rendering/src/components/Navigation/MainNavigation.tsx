@@ -90,7 +90,7 @@ const MainNavigation = (props: MainNavigationProps): JSX.Element => {
             {shopLink}
             <li className="button-menu-item">
               <Link href="/tickets" className="btn-main">
-                {t('Contact Us') || 'Contact Us'}
+                {t('Register Now') || 'Register Now'}
               </Link>
             </li>
           </ul>
