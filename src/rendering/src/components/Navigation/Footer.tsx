@@ -67,7 +67,12 @@ const Footer = (props: FooterProps): JSX.Element => {
   const { t } = useI18n();
 
   return (
-    <div className={`footer container ${sxaStyles}`}>
+    <div
+      className={`footer container ${sxaStyles}`}
+      style={{
+        backgroundColor: 'black',
+      }}
+    >
       <div className="footer-banner">
         <Link href="/">
           <Image
